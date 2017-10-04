@@ -16,23 +16,23 @@ IBM Cloud Mobile Starter for Conversation in Android
 * [License](#license)
 
 ### Summary
-This IBM Cloud Mobile Starter will showcase the Mobile Foundation and Conversation service from Watson and give you integration points for each of the IBM Cloud Mobile services.
+This IBM Cloud Mobile Starter showcases the Mobile Foundation and Watson Conversation service and provides the integration points for each of the IBM Cloud Mobile services.
 
 ### Requirements
 * [Android Studio](https://developer.android.com/studio/index.html)
-* A [IBM Cloud Account](https://www.bluemix.net/)
+* An [IBM Cloud Account](https://www.bluemix.net/)
 
 ### Conversation Configuration
-You will need to create or upload a conversation file to your Watson Conversation service (created for you) on IBM Cloud in order to allow interaction with the service.
+Create or upload a conversation file to your Watson Conversation service (already created) on IBM Cloud in order to allow for interaction with the service.
 
 In the dashboard of your Conversation service on IBM Cloud run the Conversation tooling dashboard by clicking the **Launch tool** button:
 
 ![ConversationDashboard](README_Images/ConversationDashboard.png)
 
-Now create your own Conversation Workspace or import the sample workspace named `bluemix_mobile_qa_workspace.json` we have included in this project by selecting the import button from your Workspaces screen and navigating to the provided .json:
+Now create your own Conversation Workspace or import the sample workspace named `bluemix_mobile_qa_workspace.json` is included in this project by selecting the import button from your Workspaces screen and navigating to the provided .json:
 ![ConversationImport](README_Images/ConversationImport.png)
 
-After you have created or uploaded a Conversation Workspace you will need to get the Workspace Id. Click the **View details** list item to see the Workspace information. Save the **WorkspaceID** which we will need to include in our application configuration:
+After you have created or uploaded a Conversation workspace you need to get the Workspace Id. Click **View details** to see the Workspace information. Save the **WorkspaceID** which is to be included in application configuration:
 
 ![ConversationWorkspace](README_Images/ConversationWorkspace.png)![ConversationWorkspaceID](README_Images/ConversationWorkspaceID.png)
 
@@ -40,22 +40,23 @@ After you have created or uploaded a Conversation Workspace you will need to get
 ### Mobile Foundation Configuration
 
 ##### Steps:
+Follow the steps below to configure the Mobile Foundation service
 
 * Open the project in Android Studio and perform a Gradle Sync.
-* Navigate to `MainActivity.java`, search for the `YOUR_WORKSPACE_ID` placeholder, and replace with the Watson Conversation **WorkspaceID** you saved or copied earlier.  The placeholder is found in the `ConversationTask` class, `doInBackground()` function.
+* Navigate to `MainActivity.java`, search for the `YOUR_WORKSPACE_ID` placeholder, and replace with the Watson Conversation **WorkspaceID** saved or copied earlier.  This placeholder is found in the `ConversationTask` class, `doInBackground()` function.
 
-* Goto the project folder in command line and find a shell scripts by name **mfpregisterapp.sh** and **mfpstartersetup.sh** and ensure that you have execute and write permissions in order to run these scripts.
-* run **mfpregisterapp.sh** with package (name) as the input (refer AndroidManifest.xml for this value).
-* run **mfpstartersetup.sh**. This should set up the Mobile Foundation prereqs for running the starter
-* Update **mfpclient.properties**: Replace the **host** value with **mobilefoundationUrl** value from **credentials.xml**. Keep the other values as default.
+* Go to the project folder and find a the shell scripts by name **mfpregisterapp.sh** and **mfpstartersetup.sh**. Ensure that you have *execute* and *write* permissions to run these scripts.
+* Run **mfpstartersetup.sh**. This should set up the Mobile Foundation prereqs for running the starter.
+* Update **mfpclient.properties**: Replace the **host** value with **mobilefoundationUrl** value from **credentials.xml**. Keep the other things as default.
+
 
 ### Run
-You can now run the application on a simulator or physical device:
+You can now run the application on a simulator or a physical device:
 
 ![ConversationRunningOne](README_Images/ConversationRunningOne.png)![ConversationRunningTwo](README_Images/ConversationRunningTwo.png)
 
 
-The Watson Conversation service allows you to add a natural language interface to your application to automate interactions with your end users. This project shows an application of this service that allows you to have a conversation with Watson. Watson will send an initial conversation which you can then reply to and continue to interact with the service.
+The Watson Conversation service allows you to add a natural language interface to your application to automate interactions with your end users. This project shows an application of this service that allows you to have a conversation with Watson. Watson sends an initial conversation which you can then reply to and continue the interaction with the service.
 
 ### License
 This package contains code licensed under the Apache License, Version 2.0 (the "License"). You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 and may also view the License in the LICENSE file within this package.
