@@ -47,7 +47,6 @@ Follow the steps below to configure the Mobile Foundation service
 
 * Go to the project folder and find a the shell scripts by name **mfpregisterapp.sh** and **mfpstartersetup.sh**. Ensure that you have *execute* and *write* permissions to run these scripts.
 * Run **mfpstartersetup.sh**. This should set up the Mobile Foundation prereqs for running the starter.
-* Update **mfpclient.properties**: Replace the **host** value with **mobilefoundationUrl** value from **credentials.xml**. Keep the other things as default.
 
 
 ### Run
