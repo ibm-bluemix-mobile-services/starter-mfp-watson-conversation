@@ -8,3 +8,4 @@ This IBM Cloud Mobile Starter will showcase the Conversation service from Watson
 
 1. [Android](android/README.md)
 2. [IOS Swift](ios_swift/README.md)
+3. [CORDOVA](cordova/README.md)
