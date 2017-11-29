@@ -52,8 +52,8 @@ $ cordova plugin add cordova-plugin-mfp
 ```
 * Replace url in config.xml with the host of the mobile foundation provisioned for you. <mfp:server runtime="mfp" url="" />
 * Navigate to `www/js/index.js`, search for the `YOUR_WORKSPACE_ID` placeholder, and replace with the Watson Conversation **WorkspaceID** you saved or copied earlier.
-* Goto the project folder in command line and find a shell scripts by name  **mfpregisterapp.sh** and **mfpstartersetup.sh**  in the platforms directoryand ensure that you have execute and write permissions in order to run these scripts. 
-* run **mfpstartersetup.sh**. This should set up the Mobile Foundation prereqs for running the starter. This script is present in both android and ios platforms and needs to be executed to register the respective platform.
+* Go to the project folder in command line and find a shell scripts by name  **mfpregisterapp.sh** and **mfpstartersetup.sh**  in the platforms directory and ensure that you have execute and write permissions in order to run these scripts. 
+* run **mfpstartersetup.sh**. This should set up the Mobile Foundation pre-reqs for running the starter. This script is present in both android and ios platforms and needs to be executed to register the respective platform.
 * Prepare the cordova project to copy the files into the platform folder by running the below command.
 ```bash
 $ cordova prepare
